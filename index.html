@@ -9,7 +9,10 @@
     		<div class="blurb">
         		<h1>AI Unity3D Projects</h1>
 				    <h5 id="intro">This page shows some of the environments created with Unity3D where the agent is trained to solve some problems. On the other side, there is a process that handles the agent's training by using PyTorch.</h5>
-            <h2>Avoid Guardians</h2>
+
+
+
+						<h2>Avoid Guardians</h2>
             <p id="avoid_guardians_description">The goal of the green agent is to reach the other side of the field while avoiding the two red guardians.</p>
 
 						<table id="table_avoid_guardians" class="table">
@@ -53,6 +56,9 @@
 						    </div>
 						  </div>
 						</div>
+
+
+
 
             <h2>Linear Defense</h2>
             <p id="linear_defense_description">The goal of the green agent is to block the advance of the red enemies by shooting them before reaching the agent's line of defense.</p>
@@ -99,7 +105,50 @@
 						  </div>
 						</div>
 
+						<h2>Car Race (not finished, work in progress...)</h2>
+						<p id="car_race_description">The goal of the agent (car) is to complete a lap without crashing into the walls.</p>
 
+						<table id="table_car_race" class="table">
+						  <thead>
+						    <tr>
+						      <th scope="col">State size</th>
+						      <th scope="col">Action size</th>
+						      <th scope="col">RL-Algorithm</th>
+									<th scope="col">Best behaviour(steps)</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr>
+						      <th scope="row">3</th>
+						      <td>4</td>
+						      <td>DQN-PER</td>
+									<td>-</td>
+						    </tr>
+						  </tbody>
+						</table>
+
+						<div id="img_car_race" class="container">
+  						<div class="row">
+    						<div class="col-sm">
+									<figure>
+								  	<img src="https://raw.githubusercontent.com/mkbhs/ai_unity/main/media/mkbhs_car_race_sample_initial.gif" alt="agent trained at 5k steps"  width="450" />
+										<figcaption>initial steps during training</figcaption>
+									<figure/>
+						    </div>
+						    <div class="col-sm">
+									<figure>
+										<img src="https://raw.githubusercontent.com/mkbhs/ai_unity/main/media/mkbhs_car_race_sample_2.gif" alt="agent trained at 10k steps"  width="450" />
+										<figcaption>agent during training</figcaption>
+									<figure/>
+						    </div>
+						    <div class="col-sm">
+									<figure>
+										<img src="https://raw.githubusercontent.com/mkbhs/ai_unity/main/media/mkbhs_car_race_sample_good.gif" alt="agent trained at 15k steps"  width="450" />
+										<figcaption>agent during training</figcaption>
+									</figure>
+						    </div>
+						  </div>
+						</div>
     		</div><!-- /.blurb -->
 		</div><!-- /.container -->
 	</body>
